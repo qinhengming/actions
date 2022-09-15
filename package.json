@@ -9,7 +9,6 @@
         "publish:force": "lerna publish --force-publish",
         "clean": "rimraf dist types packages/*/dist",
         "update": "esno scripts/update.ts",
-        "update:onein": "pnpm update @onein/shared @onein/runtime-api @onein-ui/all",
         "yalc:action": "nodemon --config nodemon.json --debug -x \"npm run build:rollup && cd packages/actions && yalc push\"",
         "ut": "esno scripts/test.ts",
         "new": "plop --plopfile scripts/plop/plopfile.js --dest ."
