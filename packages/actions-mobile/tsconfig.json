@@ -1,0 +1,16 @@
+{
+  "extends": "@onein/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./lib",
+    "outDir": "./dist",
+    "types": ["node", "jest"],
+    "paths": {
+      "@/*": ["lib/*"],
+      "#/*": ["types/*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": ["lib/**/*.ts", "lib/**/*.tsx", "lib/**/*.d.ts", "types/**/*.d.ts", "types/**/*.ts"],
+  "exclude": ["__tests__", "node_modules", "dist", "tests", "jest", "**/*.test.ts", "**/*.spec.ts"]
+}

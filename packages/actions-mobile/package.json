@@ -1,0 +1,38 @@
+{
+    "name": "@onein-act/actions-mobile",
+    "version": "0.0.0",
+    "description": "> TODO: description",
+    "author": "qinhm <qinhm@onein.com\n>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1",
+        "build": "rollup -c rollup.config.js"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./*": "./*"
+    },
+    "dependencies": {
+        "rollup": "^2.79.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-typescript2": "^0.34.0"
+    }
+}
