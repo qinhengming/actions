@@ -1,5 +1,5 @@
 {
-    "name": "onein-act",
+    "name": "qhm-act",
     "private": true,
     "scripts": {
         "build": "lerna run build",
