@@ -4,3 +4,4 @@ dist
 lerna-debug.log
 .yalc
 yalc.lock
+package-lock.json
