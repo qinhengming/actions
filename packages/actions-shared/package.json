@@ -29,6 +29,7 @@
     },
     "dependencies": {
         "@onein-func/functions": "^2.220921.0",
+        "@onein/shared": "^2.220921.7",
         "rollup": "^2.79.0"
     },
     "devDependencies": {

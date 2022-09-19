@@ -8,7 +8,9 @@
     "paths": {
       "@/*": ["lib/*"],
       "#/*": ["types/*"],
-      "tslib": ["node_modules/tslib/tslib.d.ts"]
+      "tslib": ["node_modules/tslib/tslib.d.ts"],
+      "@common": ["lib/common/index.ts"],
+      "@common/*": ["lib/common/*"]
     }
   },
   "include": ["lib/**/*.ts", "lib/**/*.tsx", "lib/**/*.d.ts", "types/**/*.d.ts", "types/**/*.ts"],

@@ -25,8 +25,8 @@
     "paths": {
       "@onein/actions": ["packages/actions/index.ts"],
       "@onein/actions/*": ["packages/actions/*"],
-      "@common": ["packages/common/index.ts"],
-      "@common/*": ["packages/common/*"]
+      "@common": ["packages/actions-shared/lib/common/index.ts"],
+      "@common/*": ["packages/actions-shared/lib/common/*"]
     }
   },
   "include": ["packages/global.d.ts", "packages/"],
