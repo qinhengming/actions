@@ -15,8 +15,6 @@ const tsPlugin = ts({
     extensions,
 })
 
-const actions = ["DataSourceAdd", "DataSourceAssign", "DataSourceClearSelected", "DataSourceDelete", "DataSourceEdit"]
-
 // 基础配置
 const commonConf = {
     input: getPath("./lib/index.ts"),
@@ -47,16 +45,6 @@ const outputMap = [
 
 const buildConf = (options) => Object.assign({}, commonConf, options)
 
-let actionOutput = actions.map((name) => {
-    const conf = {
-        input: getPath(`./lib/${name}/index.ts`),
-        output: {
-            format: "es",
-            file: `dist/${name}/index.ts`,
-        },
-    }
-    return buildConf(conf)
-})
 
 const baseOutput = outputMap.map((output) => buildConf({ output: { name: packageJSON.name, ...output } }))
 

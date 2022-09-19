@@ -1,17 +1,14 @@
-import { injectable, unmanaged } from 'inversify'
 import { EActionType, IActionRes } from '@common'
 import { IDataSourceEditOptions } from './IOptions'
 import { shortGuid, _getExpressValue } from '@common/utils'
 import { EAppType } from '@common/enums/EAppType'
 import { IActionRuntime } from '@common/interfaces/IActionRuntime'
 import { DataLimit, EDataMark, EFilterMode, IActionRender } from '@onein/shared'
-import 'reflect-metadata'
 import { useActionRes } from '../useActionRes'
 
 /**
  * 编辑数据
  */
-@injectable()
 export class DataSourceEdit implements IActionRender, IActionRuntime {
   typeName: EActionType = EActionType.DataSourceEdit
 
@@ -26,7 +23,7 @@ export class DataSourceEdit implements IActionRender, IActionRuntime {
       quickType: DataLimit.Current
     }
   }
-  constructor(@unmanaged() id?: string) {
+  constructor(id?: string) {
     this.id = id || shortGuid()
   }
 

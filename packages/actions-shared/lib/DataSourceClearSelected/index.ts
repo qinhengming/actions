@@ -1,17 +1,14 @@
-import { injectable, unmanaged } from 'inversify'
 import { EActionType, IActionRes } from '@common'
 import { shortGuid } from '@common/utils'
 import { EAppType } from '@common/enums/EAppType'
 import { IActionRuntime } from '@common/interfaces/IActionRuntime'
 import { DataLimit, EFilterMode, IActionRender } from '@onein/shared'
-import 'reflect-metadata'
 import { IDataSourceClearSelectedOptions } from './IOptions'
 import { useActionRes } from '../useActionRes'
 
 /**
  * dataSourceClearSelectedAction节点
  */
-@injectable()
 export class DataSourceClearSelected implements IActionRender, IActionRuntime {
   typeName: EActionType = EActionType.DataSourceClearSelected
 
@@ -26,7 +23,7 @@ export class DataSourceClearSelected implements IActionRender, IActionRuntime {
       quickType: DataLimit.All
     }
   }
-  constructor(@unmanaged() id?: string) {
+  constructor(id?: string) {
     this.id = id || shortGuid()
   }
 

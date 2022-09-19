@@ -1,17 +1,14 @@
-import { injectable, unmanaged } from 'inversify'
 import { EActionType, IActionRes } from '@common'
 import { shortGuid, _getExpressValue } from '@common/utils'
 import { EAppType } from '@common/enums/EAppType'
 import { IActionRuntime } from '@common/interfaces/IActionRuntime'
 import { DataLimit, EDataMark, EFilterMode, EInsertPosition, IActionRender } from '@onein/shared'
-import 'reflect-metadata'
 import { IDataSourceAssignOptions } from './IOptions'
 import { useActionRes } from '../useActionRes'
 
 /**
  * dataSourceAssignAction节点
  */
-@injectable()
 export class DataSourceAssign implements IActionRender, IActionRuntime {
   typeName: EActionType = EActionType.DataSourceAssign
 
@@ -29,7 +26,7 @@ export class DataSourceAssign implements IActionRender, IActionRuntime {
     },
     assign: []
   }
-  constructor(@unmanaged() id?: string) {
+  constructor(id?: string) {
     this.id = id || shortGuid()
   }
 
