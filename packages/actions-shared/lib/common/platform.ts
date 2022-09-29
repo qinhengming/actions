@@ -1,6 +1,6 @@
 export const platform = [
   {
-    platformTypeCode: '微信',
+    platformTypeCode: 'wechat',
     variables: [
       {
         label: '平台ID',

@@ -209,6 +209,10 @@ export type EditorProps = {
    */
   dataSourceType?: EDataSourceType
   /**
+   * 可选数据源类型
+   */
+  ableDsTypes?: EDataSourceType[]
+  /**
    * 所属组
    */
   group?: string
@@ -363,6 +367,7 @@ export function createDataSourceProp({
   label,
   defaultValue = '',
   dataSourceType = EDataSourceType.SchemaDs,
+  ableDsTypes = [],
   multiple = false,
   isBatch = false,
   isEdit = true,
@@ -374,6 +379,7 @@ export function createDataSourceProp({
     label,
     defaultValue,
     dataSourceType,
+    ableDsTypes,
     multiple,
     isBatch,
     isEdit,

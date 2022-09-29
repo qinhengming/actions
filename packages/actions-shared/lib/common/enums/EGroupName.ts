@@ -13,5 +13,6 @@ export enum EGroupName {
   Media = 'media', //媒体操作
   Sign = 'sign', //登录注册
   Location = 'location', //地理位置
+  Bigdata = 'bigdata', //大数据
   Other = 'other' // 其它
 }

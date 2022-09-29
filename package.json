@@ -3,6 +3,7 @@
     "private": true,
     "scripts": {
         "build": "lerna run build",
+        "build:shared": "lerna run build --scope=@qhm-act/actions-shared",
         "build:types": "tsc --emitDeclarationOnly",
         "publish": "lerna publish",
         "bootstrap": "lerna bootstrap",

@@ -63,6 +63,7 @@ export enum EActionType {
   Loop = 'loopAction',
   LoopCustom = 'loopCustomAction',
   LoopBreak = 'loopBreakAction',
+  LoopContinue = 'loopContinueAction',
   DataSourceClearSelected = 'dataSourceClearSelectedAction',
   DataSourceSelected = 'dataSourceSelectedAction',
   RotateWidget = 'rotateWidgetAction',
@@ -83,5 +84,6 @@ export enum EActionType {
   ThirdPartyAccountBind = "thirdPartyAccountBindAction",
   GetCurrentLocation = "getCurrentLocationAction",
   WidgetPushData = "widgetPushDataAction",
-  WidgetSizeSet = 'widgetSizeSetAction'
+  WidgetSizeSet = 'widgetSizeSetAction',
+  AggregateQuery = 'aggregateQueryAction'
 }

@@ -300,11 +300,12 @@ export function getResFieldValue(res, fieldName, path?: string) {
     return res[fieldName]
   } else {
     if (!res.data) return ''
-    if (path) {
-      return res.data[path][fieldName]
-    } else {
-      return res.data[fieldName]
+    const pathArr = fieldName.split('.')
+    let val = path ?  res.data[path] : res.data
+    for(const path of pathArr) {
+      val = val[path]
     }
+    return val
   }
 }
 

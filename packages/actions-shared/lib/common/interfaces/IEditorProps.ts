@@ -1,5 +1,5 @@
-import { EditorSelectOptions } from '@/common/editor/ActionEditor'
-import { EDialogPosition } from '@common'
+import { EditorSelectOptions } from '@common/editor/ActionEditor'
+import { EDialogPosition } from '@onein/actions'
 import { EDataSourceType } from '@onein/shared'
 
 type TDsValue = string | boolean | { label: string; value: string }[] | string[]
@@ -71,6 +71,7 @@ export interface EditorDataSourceProps {
   label?: string
   defaultValue?: TDsValue
   dataSourceType?: EDataSourceType
+  ableDsTypes?: EDataSourceType[]
   multiple?: boolean
   isBatch?: boolean
   isEdit?: boolean
