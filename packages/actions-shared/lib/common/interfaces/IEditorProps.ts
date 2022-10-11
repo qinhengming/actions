@@ -1,6 +1,6 @@
 import { EditorSelectOptions } from '@common/editor/ActionEditor'
-import { EDialogPosition } from '@onein/actions'
 import { EDataSourceType } from '@onein/shared'
+import { EDialogPosition } from '../enums/EDialogPosition';
 
 type TDsValue = string | boolean | { label: string; value: string }[] | string[]
 

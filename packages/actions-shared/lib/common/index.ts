@@ -6,7 +6,7 @@ export * from './interfaces/IConfigAction'
 export * from './interfaces/IEdge'
 export * from './interfaces/IPageConfig'
 export * from './interfaces/IActionRes'
-export * from './interfaces/IDataSourceSetting'
+export * from './interfaces/IDatasourceSetting'
 
 export * from './enums/EActionType'
 export * from './enums/EAppType'
