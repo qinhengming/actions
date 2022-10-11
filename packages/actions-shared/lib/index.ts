@@ -3,6 +3,8 @@ function actionsShared() {
     console.log("actionsShared")
 }
 
+export * from "./setupActions"
+
 export { actionsShared }
 
 export { DataSourceAdd } from "./DataSourceAdd"
