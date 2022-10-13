@@ -4,6 +4,7 @@ function actionsShared() {
 }
 
 export * from "./setupActions"
+export * from "./registerActions"
 
 export { actionsShared }
 
